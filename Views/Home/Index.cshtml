@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "A Web Page";
+}
+
+@model User
+
+<div id="container">
+    <div id="row">
+        <div id="form" class="mx-auto">
+            <form asp-action="Result" asp-controller="Home" method="post">
+                <div class="form-group">
+                    <label asp-for="FName"></label>
+                    <input type="text" asp-for="FName" id="" class="form-control">
+                    <span style="color:Red;" asp-validation-for="FName"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="LName"></label>
+                    <input type="text" asp-for="LName" id="" class="form-control">
+                    <span style="color:Red;" asp-validation-for="LName"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Age"></label>
+                    <input type="text" asp-for="Age" id="" class="form-control">
+                    <span style="color:Red;" asp-validation-for="Age"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email"></label>
+                    <input type="text" asp-for="Email" id="" class="form-control">
+                    <span style="color:Red;" asp-validation-for="Email"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password"></label>
+                    <input type="text" asp-for="Password" id="" class="form-control">
+                    <span style="color:Red;" asp-validation-for="Password"></span>
+                </div>
+                <button value="Add User" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
